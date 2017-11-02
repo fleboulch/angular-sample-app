@@ -14,11 +14,17 @@ export class AppComponent {
     {id: 3, name: 'User', role: 'USER'}
   ];
 
+  nb = 5;
+
   constructor() {
     let newItem =
       {id: 4, name: 'Tony', role: 'USER'}
     ;
 
     this.data.push(newItem);
+  }
+
+  changeNumber(event) {
+    this.nb = event;
   }
 }

@@ -17,5 +17,7 @@
 
 </table>
 
-<app-child [data]="data"></app-child>
-<!--<app-child></app-child>-->
+<app-child (counter)="changeNumber($event)" [data]="data"></app-child>
+<br>
+<br>
+Nb from parent : {{nb}}
