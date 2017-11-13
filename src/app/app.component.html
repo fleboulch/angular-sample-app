@@ -1,21 +1,4 @@
-<h1>
-  Data from root component
-</h1>
-
-
-<table>
-  <tr>
-    <th>id</th>
-    <th>name</th>
-    <th>role</th>
-  </tr>
-  <tr *ngFor="let d of data">
-    <td>{{d.id}}</td>
-    <td>{{d.name}}</td>
-    <td>{{d.role}}</td>
-  </tr>
-
-</table>
+<app-array [myComponent]="value" [data]="data" [hidden]="hideMe"></app-array>
 
 <app-child (counter)="changeNumber($event)" [data]="data"></app-child>
 <br>
