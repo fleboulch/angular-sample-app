@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
+  value: string = "root";
+
+  hideMe = false;
+
   data = [
     {id: 1, name: 'Florent', role: 'ADMIN'},
     {id: 2, name: 'Admin', role: 'ADMIN'},

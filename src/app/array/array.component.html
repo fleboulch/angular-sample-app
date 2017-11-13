@@ -1,0 +1,20 @@
+<div [hidden]="hidden">
+
+  <h1>
+    Data from {{ myComponent }}
+  </h1>
+
+  <table>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>role</th>
+    </tr>
+    <tr *ngFor="let curr of data">
+      <td>{{curr.id}}</td>
+      <td>{{curr.name}}</td>
+      <td>{{curr.role}}</td>
+    </tr>
+
+  </table>
+</div>

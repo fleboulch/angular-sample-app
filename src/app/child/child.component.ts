@@ -13,6 +13,8 @@ export class ChildComponent implements OnInit {
   @Output()
   counter: EventEmitter<number> = new EventEmitter<number>();
 
+  value: string = "child";
+
   number = 10;
 
   constructor() { }
